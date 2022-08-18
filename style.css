@@ -1,0 +1,503 @@
+
+/* Global  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body{
+    background: #f4f6f7;
+}
+
+
+h3{
+    color: #2121fd;
+}
+
+ul{
+    line-height: 15px;
+}
+
+li{
+    line-height: 26px;
+    font-size: 14px;
+}
+
+.link{
+    margin: 30px 0 0 30px;
+}
+
+/* Navbar */
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    /* background: #2121fd; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px groove #2121fd;
+}
+
+.navbar .logo{
+    margin-right: 650px;
+}
+
+.navbar .logo h3{
+    font-family: fantasy;
+    font-size: 40px;
+}
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: auto 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #2121fd;
+    font-family: Serif;
+    font-size: 20px;
+}
+
+.navbar ul li:hover{
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale(1.4);
+    transition: 0.5s;
+}
+
+.Auto-biography{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 60px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.Auto-biography .AboutMe{
+    width: 700px;
+    margin-left: 40px;
+}
+
+.Auto-biography h1{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2121fd;
+    margin-bottom: 3px;
+}
+
+.hr-line{
+    width: 100px;
+    border-bottom: 2px groove #2121fd;
+    margin-bottom: 20px;
+    margin-left: 300px;
+}
+
+.Auto-biography p{
+    font-size: 14px;
+    line-height: 26px;
+    text-align: justify;
+}
+
+.Auto-biography h3{
+    margin: 2px auto;
+}
+
+.Auto-biography ul{
+    margin-left: 40px;
+}
+
+.Auto-biography .image{
+    width: 300px;
+    height: 400px;
+    background-image: url(./img/b3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    margin-top: 60px;
+    box-shadow: 3px 3px 3px 3px rgb(133, 132, 132);
+}
+
+
+/* Section ContactUs */
+.contactUs{
+    width: 100%;
+    height: 400px;
+    background: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    width:380px;
+    height: 360px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgb(133, 132, 132);
+    padding: 15px 20px;
+    margin-right: 100px;
+}
+
+.contact h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form input, textarea, Select{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+form textarea{
+    height: 90px;
+    padding: 10px 20px;
+    resize: none;
+}
+
+input[type = "button"]{
+    background: #2121fd;
+    color: #fff;
+    font-size: 16px;
+    font-family: serif;
+    font-weight: 1000;
+    border: none;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+input::placeholder,
+textarea::placeholder{
+    font-size: 15px;
+    color: gray;
+}
+
+
+
+/* Register */
+.reg-container{
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+}
+
+
+.write-up{
+    width: 300px;
+    margin: 100px 50px 0 50px;
+}
+
+.write-up h1{
+    font-size: 37px;
+    color: blue;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.write-up p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.signup{
+    margin-top: 30px;
+    width: 380px;
+    height: 520px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgb(133, 132, 132);
+    padding: 15px 20px;
+}
+
+form input{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type = "button"]{
+    background-color: blue;
+    color: #fff;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 1000;
+    border: none;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+input::placeholder{
+    font-size: 15px;
+    color: gray;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+}
+
+p{
+    text-align: center;
+}
+
+
+/* login */
+
+.login{
+    margin-top: 60px;
+    width: 380px;
+    height: 310px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgb(133, 132, 132);
+    padding: 15px 20px;
+}
+
+form input{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+}
+
+button{
+    height: 40px;
+    width: 180px;
+    background: green;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    margin-left: 80px;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+button a{
+    color: #fff;
+}
+
+.line{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+hr{
+    width: 140px;
+    height: 1px;
+    margin: 0 20px;
+}
+
+.para{
+    margin-top: -10px;
+    font-size: 14px;
+}
+
+
+/* Calculator */
+
+.calculator{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.cal-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-bottom: 70px;
+}
+
+.cal-1 table{
+    width: 300px;
+    height: 400px;
+    border: 3px groove black;
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+table td, table th{
+    border: 1px solid black;
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 14px;
+    outline: none;  
+}
+
+table th{
+    border-radius: 10px;
+    text-align: right;
+    color: #000;
+    font-size: 18px;
+    padding: 20px 10px;   
+}
+
+table td{
+    background: grey;
+    border-radius: 10px;
+    font-family: arial;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgb(133, 132, 132);
+}
+
+table td:hover{
+    background: #575656;
+}
+
+table .op{
+    background: lightcoral;
+    color: #fff;
+}
+
+table .op:hover{
+    background: indianred;
+}
+
+table .atn{
+    background: turquoise
+}
+
+table .atn:hover{
+    background: teal;
+}
+
+.calculator h1{
+    margin-left: 30px;
+    color: #2121fd;
+}
+
+
+/* Grid-Calculator */
+
+.grid-calculator{
+    width: 100%;
+    height: 600px;
+    background: lightgrey;
+    display: flex;
+}
+
+
+.cal-2{
+    width: 350px;
+    height: 520px;
+    background: black;
+    border: 1px solid black;
+    border-radius: 50px;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 200px;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cal-2 .result-area{
+    width: 100%;
+    height: 100px;
+}
+
+.cal-2 .result-area p{
+    font-size: 40px;
+    color: #fff;
+    text-align: right;
+    padding-top:50px;
+}
+
+.cal-2 .main-body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.8em;
+    width: 100%;
+}
+
+.cal-2 .main-body .button{
+    height: 60px;
+    width: 60px;
+    font-size: 25px;
+    text-align: center;
+    cursor: grab;
+    background: #817b42;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.cal-2 .main-body .button span{
+    font-size: 18px;
+}
+
+.cal-2 .main-body .button:hover{
+    background: #a19a5b;
+    transition: ease-in-out .5s;
+}
+
+.cal-2 .main-body .action-btn{
+    background: #bea78e;
+}
+
+.cal-2 .main-body .action-btn:hover{
+    background: #7a5935;
+    transition: ease-in-out .5s;
+}
+
+.cal-2 .main-body .zero{
+    width: 100%;
+    grid-column: 1/3;
+    border-radius: 50px;
+    justify-content: left;
+    padding-left: 25px;
+}
+
+.cal-2 .main-body .cal-action-btn{
+    background: orange;
+}
+
+.cal-2 .main-body .cal-action-btn:hover{
+    background: beige;
+    transition: ease-in-out .5s;
+    color: orange;
+}
+
+.grid-calculator h1{
+    color: #2121fd;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 200px;
+}
+
